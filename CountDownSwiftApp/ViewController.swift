@@ -9,29 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var TextLabel: UILabel!
+    @IBOutlet weak var TapButonn: UIButton!
+    var ButtonCount: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self,
-                                                         action: #selector(handleTapAnimations)))
+        TextLabel.text = "0"
     }
     
-    @objc fileprivate func handleTapAnimations(){
-        UIView.animate(withDuration: 0.5, delay: 0,
-                       usingSpringWithDamping: 1, initialSpringVelocity: 1,
-                       options: .curveEaseOut, animations: {
-                        
-                        self.TextLabel.alpha = 0
-                        self.TextLabel.transform = self.TextLabel.transform.translatedBy(x: 0, y: -150)
-                        
-        })
+    @IBAction func TapButton(_ sender: Any) {
+        self.ButtonCount += 1
+        self.TextLabel.text = String(self.ButtonCount)
+        
     }
-
+    
+    
 
 }
-
