@@ -16,16 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2O-fw-9nI">
-                                <rect key="frame" x="20.666666666666657" y="290" width="372.66666666666674" height="156"/>
+                                <rect key="frame" x="20.666666666666657" y="340" width="372.66666666666674" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMT-Er-1Vq">
-                                        <rect key="frame" x="171" y="48" width="30.666666666666657" height="60"/>
+                                        <rect key="frame" x="171" y="-2" width="30.666666666666657" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRA-0N-l7B">
-                                        <rect key="frame" x="0.0" y="0.0" width="43" height="156"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="56"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                         <state key="normal" title="-"/>
                                         <connections>
@@ -33,7 +32,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gf-N3-Ch7">
-                                        <rect key="frame" x="329.66666666666663" y="0.0" width="43" height="156"/>
+                                        <rect key="frame" x="329.66666666666663" y="0.0" width="43" height="56"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                         <state key="normal" title="+"/>
                                         <connections>
@@ -41,7 +40,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="8gf-N3-Ch7" firstAttribute="top" secondItem="t2O-fw-9nI" secondAttribute="top" id="Hr0-Hf-cQc"/>
                                     <constraint firstAttribute="trailing" secondItem="8gf-N3-Ch7" secondAttribute="trailing" id="LT4-AD-yDt"/>
@@ -55,7 +54,7 @@
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="t2O-fw-9nI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="290" id="EhS-uJ-aEx"/>
+                            <constraint firstItem="t2O-fw-9nI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="340" id="EhS-uJ-aEx"/>
                             <constraint firstItem="t2O-fw-9nI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d2h-hM-ZeP"/>
                             <constraint firstItem="t2O-fw-9nI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="efN-Wo-246"/>
                             <constraint firstItem="t2O-fw-9nI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fZ0-RA-pEi"/>
